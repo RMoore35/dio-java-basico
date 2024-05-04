@@ -1,3 +1,5 @@
+package edu.ryan.primeirasemana;
+
 public class BoletimEstudante {
     public static void main(String[] args) {
 		int mediaFinal = 6;
