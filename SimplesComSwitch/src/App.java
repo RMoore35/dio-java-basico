@@ -30,14 +30,12 @@ public class App {
                 case 0:
                     System.out.println("Programa encerrado.");
                     continuar = false; 
-                    
+
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
         }
         scanner.close();
-    }
-}
     }
 }
