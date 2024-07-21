@@ -20,4 +20,13 @@ public class Convidado {
         return codigoConvite;
     }
 
+
+    @Override
+    public String toString() {
+        return "{" +
+            " nome='" + getNome() + "'" +
+            ", codigoConvite='" + getCodigoConvite() + "'" +
+            "}";
+    }
+
 }
