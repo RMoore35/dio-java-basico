@@ -1,7 +1,5 @@
 package Ordenacao;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class Pessoa implements Comparable<Pessoa> {
@@ -19,7 +17,7 @@ public class Pessoa implements Comparable<Pessoa> {
 
     @Override
     public int compareTo(Pessoa p) {
-        return Integer.compare(idade, p);
+        return Integer.compare(idade, p.getIdade());
     }
 
     public String getNome() {
