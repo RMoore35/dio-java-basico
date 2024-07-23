@@ -21,7 +21,25 @@ public class AgendaContatos {
     }
 
     public Set<Contato> pesquisarPorNome(String nome) {
-        Set<Contato>
+        Set<Contato> contatosPorNome = new HashSet<>();
+        for(Contato c : contatoSet) {
+            if(c.getNome().startsWith(nome)) {
+                contatosPorNome.add(c);
+            }
+        }
+        return contatosPorNome;
+    }
+
+    public Contato atualizarNumeroContato(String nome, int novoNumero) {
+        Contato contatoAtualizado = null;
+        for(Contato c : contatoSet) {
+            if(c.getNome().equalsIgnoreCase(nome)) {
+                c.setNumero(novoNumero);
+                contatoAtualizado = c;
+                break;
+            }
+        }
+        return contatoAtualizado;
     }
 
 }
