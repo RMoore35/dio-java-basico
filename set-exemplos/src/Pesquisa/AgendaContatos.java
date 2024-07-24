@@ -42,4 +42,22 @@ public class AgendaContatos {
         return contatoAtualizado;
     }
 
+    public static void main(String[] args) {
+        AgendaContatos agendaContatos = new AgendaContatos();
+
+        agendaContatos.exhibirContatos();
+        
+        agendaContatos.adicionarContato("Ryan", 123456);
+        agendaContatos.adicionarContato("Ryan 2", 0);
+        agendaContatos.adicionarContato("Ryan 3", 123456);
+        agendaContatos.adicionarContato("Ryan 4", 11);
+        agendaContatos.adicionarContato("Ryan 5", 12);
+
+        agendaContatos.exhibirContatos();
+
+        System.out.println(agendaContatos.pesquisarPorNome("Ryan"));
+        
+        System.out.println("Contato atualizado: " + agendaContatos.atualizarNumeroContato("Ryan 5", 111111));
+        
+        }
 }

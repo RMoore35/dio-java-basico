@@ -16,7 +16,7 @@ public class Contato {
         return this.nome;
     }
 
-    public int getNumbero() {
+    public int getNumero() {
         return this.numero;
     }
 
